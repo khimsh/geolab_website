@@ -1,0 +1,28 @@
+{
+  "name": "geolab_website",
+  "version": "1.0.0",
+  "description": "web design for geolab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khimsh/geolab_website.git"
+  },
+  "author": "Ia Khimsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khimsh/geolab_website/issues"
+  },
+  "homepage": "https://github.com/khimsh/geolab_website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^4.0.0"
+  }
+}

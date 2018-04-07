@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photography | Web Design</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Social Media Icon Fonts -->
+    <link rel="stylesheet" href="icomoon/icon-fonts.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <div class="header__logo">
+              <h1 class="sr-only">Web Design</h1>
+              <a href="#">
+                <img class="header__logo-img" src="assets/images/Mainlogo.png" alt="site logo">
+              </a>
+            </div><!-- .header__logo -->
+          </div><!-- .col -->
+
+          <div class="col-4">
+            <nav class="main-navigation">
+              <h2 class="sr-only">main navigation</h2>
+              <ul class="main-navigation__list-wrapper">
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </nav>
+
+            <!-- Burger Icon -->
+            <div id="menu-trigger">
+              <span></span>
+            </div>
+          </div><!-- .col -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+
+      <div class="header__banner">
+        <p class="header__banner__text">main text body</p>
+        <span class="arrow"></span>
+      </div><!-- .header__banner -->
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+
+        <!-- About Section -->
+        <section class="section section__about" id="about">
+          <h2 class="section__header">about photography</h2>
+          <p class="section__description">Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film</p>
+          <div class="section__list">
+            <div class="row justify-content-between">
+              <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
+                <div class="section__card">
+                  <figure>
+                    <img class="section__card_image" src="assets/images/Mini1.jpg" alt="img one"/>
+                    <figcaption>
+                      <h3 class="section__card_title">lorem ipsum</h3><span class="logo logo-one"></span>
+                    </figcaption>
+                  </figure>
+                </div><!-- .section__card -->
+              </div><!-- col -->
+
+              <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
+                <div class="section__card">
+                  <figure>
+                    <img class="section__card_image" src="assets/images/Mini2.jpg" alt="img two"/>
+                    <figcaption>
+                      <h3 class="section__card_title">lorem ipsum</h3><span class="logo logo-two"></span>
+                    </figcaption>
+                  </figure>
+                </div><!-- .section__card -->
+              </div><!-- col -->
+
+              <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
+                <div class="section__card">
+                  <figure>
+                    <img class="section__card_image" src="assets/images/Mini3.jpg" alt="img three"/>
+                    <figcaption>
+                      <h3 class="section__card_title">lorem ipsum</h3><span class="logo logo-three"></span>
+                    </figcaption>
+                  </figure>
+                </div><!-- .section__card -->
+              </div><!-- col -->
+            </div><!-- .row -->
+          </div><!-- .section__list -->
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Gallery Section -->
+        <section class="section section__gallery" id="gallery">
+          <h2 class="section__header">gallery</h2>
+          <div class="section__gallery">
+            <div class="row justify-content-between">
+              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+                <figure class="section__gallery__item">
+                  <img src="assets/images/gallery1.jpg" alt="alt text one"/>
+                  <figcaption>Wildlife</figcaption>
+                </figure>
+              </div><!-- .col -->
+
+              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+                <figure class="section__gallery__item">
+                  <img src="assets/images/gallery2.png" alt="alt text two"/>
+                  <figcaption>Portrait</figcaption>
+                </figure>
+              </div><!-- .col -->
+
+              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+                <figure class="section__gallery__item">
+                  <img src="assets/images/gallery3.jpg" alt="alt text three"/>
+                  <figcaption>Animals</figcaption>
+                </figure>
+              </div><!-- .col -->
+
+              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+                <figure class="section__gallery__item">
+                  <img src="assets/images/gallery4.jpg" alt="alt text four"/>
+                  <figcaption>Black&amp;White</figcaption>
+                </figure>
+              </div><!-- .col -->
+            </div><!-- .row -->
+          </div><!-- .section-gallery -->
+        </section>
+
+        <hr class="section-divider">
+
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+
+            <section class="section section__contact" id="contact">
+              <h2 class="section__header--contact">contact</h2>
+              <div class="contact__wrapper">
+
+                <div id="map">
+                <!-- Google Maps -->
+                </div>
+
+                <div class="contact-form">
+                  <form>
+                    <div class="group-one">
+                      <div class="input__text">
+                        <div class="input__text__item">
+                          <input type="text" name="name" id="name" placeholder="name">
+                          <label for="name">name</label>
+                        </div><!-- .input__text__item -->
+                        <div class="input__text__item">
+                          <input type="email" name="email" id="email" placeholder="email">
+                          <label for="email">email</label>
+                        </div><!-- .input__text__item -->
+                        <div class="input__text__item">
+                          <input type="text" name="subject" id="subject" placeholder="subject">
+                          <label for="subject">subject</label>
+                        </div><!-- .input__text__item -->
+                        <div class="input__text__item">
+                          <textarea name="textarea" cols="30" rows="6" placeholder="text"></textarea>
+                        </div><!-- .input__text__item -->
+                      </div><!-- .input__text -->
+
+                      <div class="social-media-icons">
+                        <a class="social-media" href=""><span class="icon-google-plus"></span></a>
+                        <a class="social-media" href=""><span class="icon-facebook"></span></a>
+                        <a class="social-media" href=""><span class="icon-twitter"></span></a>
+                      </div><!-- .social-media-icons -->
+                    </div><!-- .goup-one -->
+
+                    <div class="group-two">
+                      <div class="input__radio">
+                        <div class="input__radio__item">
+                          <input type="radio" name="gender" value="male" id="male">
+                          <label for="male">male</label>
+                        </div><!-- .input__radio__item -->
+                        <div class="input__radio__item">
+                          <input type="radio" name="gender" value="female" id="female">
+                          <label for="female">female</label>
+                        </div><!-- .input__radio__item -->
+                      </div><!-- .input__radio -->
+
+                      <div class="input__checkbox">
+                        <h3 class="newsletter">Sign up for newsletter:</h3>
+                        <div class="input__checkbox__item">
+                          <input type="checkbox" name="newsletter" id="images">
+                          <label for="images">receive images</label>
+                        </div><!-- .input__checkbox__item -->
+
+                        <div class="input__checkbox__item">
+                            <input type="checkbox" name="newsletter" id="promotions">
+                            <label for="promotions">receive promotions</label>
+                        </div><!-- .input__checkbox__item -->
+
+                        <div class="input__checkbox__item">
+                            <input type="checkbox" name="newsletter" id="updates">
+                            <label for="updates">receive updates</label>
+                        </div><!-- .input__checkbox__item -->
+
+                        <div class="input__checkbox__item">
+                            <input type="checkbox" name="newsletter" id="cameras">
+                            <label for="cameras">receive new cameras</label>
+                        </div><!-- .input__checkbox__item -->
+                      </div><!-- .input__checkbox -->
+                      <button type="submit">SEND</button>
+                    </div><!-- .gourp-two -->
+                  </form>
+                </div><!-- .contact-form -->
+              </div><!-- .contact__wrapper -->
+            </section>
+
+          </div><!-- .col -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-4 col-sm-8 offset-sm-2 offset-lg-0 offset-md-0">
+            <p class="copyright">&copy; copyright 2018</p>
+          </div>
+          <div class="col-md-4 col-sm-8 offset-sm-2 offset-lg-0 offset-md-0">
+            <p class="author text-right">created by: <a href="mailto:">Ia Khimsh</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 41.717578, lng: 44.7850189};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3QAgOAeWBnd9swEbrPNzD4nDD40vYWlY&callback=initMap">
+    </script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

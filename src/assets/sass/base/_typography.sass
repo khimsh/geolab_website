@@ -1,0 +1,115 @@
+/**************************
+ * Typography
+ **************************/
+
+@font-face
+    font-family: 'BPG Nino Mtavruli Bold'
+    src: url('../fonts/bpg-nino-mtavruli-bold-webfont.eot') /* IE9 Compat Modes */
+    src: url('../fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg') /* Legacy iOS */
+
+@font-face
+    font-family: 'Myriad Pro Regular'
+    src: url('../fonts/Myriad Pro Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/MyriadPro-Regular.otf') format('opentype') /* Legacy iOS */
+
+/**
+ * Section typography
+ **/
+.section__header
+    font-family: $myriadPro
+    text-transform: uppercase
+    font-size: 3.6rem
+    text-align: center
+
+.section__header--contact
+    font-family: $myriadPro
+    font-size: 4.5rem
+    font-weight: 400
+    text-transform: uppercase
+    color: #FCFCFC
+    color: rgb(252, 252, 252)
+
+.section__description
+    font-family: $font-nino
+    font-size: 2.2rem
+    font-weight: bold
+    line-height: 3.2rem
+    text-align: center
+
+/**
+ * Banner typography
+ **/
+.header__banner__text
+    font-family: $myriadPro
+    font-size: 7.2rem
+    color: $white
+    text-transform: uppercase
+    white-space: nowrap
+    text-outline: $white
+    text-outline: rgb(255, 255, 255)
+
+@media(max-width: 768px)
+    .header__banner_text
+        font-size: 6.5rem
+
+@media(max-width: 576px)
+    .header__banner_text
+        font-size: 4rem
+
+/**
+ * About section typography
+ **/
+.section__card_title
+    font-family: $myriadPro
+    font-size: 2.3rem
+    font-weight: 400
+    text-transform: uppercase
+    color: $black
+
+/**
+ * Contact Section typography
+ **/
+.input__text label
+    font-family: $myriadPro
+    font-size: 1.3rem
+    line-height: 58.44px
+    color: $black
+
+.newsletter
+    font-family: $myriadPro
+    font-size: 1.6rem
+    line-height: 58.44px
+    letter-spacing: 3.2px
+    color: $black
+    white-space: nowrap
+
+.input__radio label
+    font-family: $myriadPro
+    font-size: 1.6rem
+    line-height: 58.44px
+    letter-spacing: 3.2px
+    color: $black
+
+.input__checkbox__item label
+    font-family: $myriadPro
+    font-size: 1.6rem
+    line-height: 58.44px
+    letter-spacing: 3.2px
+    color: $black
+
+/**
+ * Footer typography
+ **/
+.copyright
+    font-family: $myriadPro
+    font-size: 1.8rem
+    color: $white
+    line-height: 60.2px
+    letter-spacing: 0.9px
+
+.author, .author a
+    font-family: $myriadPro
+    font-size: 1.7rem
+    text-align: right
+    color: $white
+    line-height: 60.2px
+    letter-spacing: 0.85px

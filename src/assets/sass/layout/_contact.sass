@@ -1,0 +1,73 @@
+/**************************
+ * Contact Styles
+ **************************/
+.section__contact
+    position: relative
+    margin-bottom: 14rem
+
+#map
+    width: 100%
+    height: 100%
+
+.contact__wrapper
+    transform: translate(6rem, 3rem)
+
+.contact-form
+    background-color: $grey
+
+    form
+        padding-left: 2.5rem
+        padding-top: 5rem
+        padding-bottom: 4rem
+        padding-right: 5rem
+        display: flex
+        flex-direction: row
+        height: 100%
+
+.group-two
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.input__text__item
+    position: relative
+
+    input
+        margin-bottom: 3rem
+
+    label
+        position: absolute
+        top: -1.1rem
+        left: 1.6rem
+        opacity: 0
+        visibility: hidden
+
+.input__radio
+    align-self: flex-start
+
+.input__radio__item label
+    padding-left: 1.4rem
+    margin-right: 2rem
+
+.input__radio__item
+    height: auto
+    display: inline-block
+
+.input__checkbox__item
+    height: 4rem
+
+/**
+ * display: grid for modern browsers
+ **/
+@supports (display: grid)
+    .contact__wrapper
+        display: grid
+        grid-template-columns: 2fr 3fr
+
+    // .contact-form form
+    //     display: grid
+    //     grid-template-columns: 1fr 1fr
+
+    // .group-two
+    //     display: grid
+    //     grid-template-rows: 1fr 2fr

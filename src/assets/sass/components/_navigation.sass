@@ -1,0 +1,24 @@
+.main-navigation
+    height: 100%
+    display: flex
+    align-items: center
+
+.main-navigation__list-wrapper
+    display: flex
+    flex-direction: row
+    li
+        font-size: 2rem
+        font-family: $myriadPro
+        a
+            color: $link-black
+            text-transform: uppercase
+            padding: 1.1rem
+            display: inline-block
+            margin-right: 2.2rem
+
+            &.active
+                border-bottom: 3px solid $main-purple
+
+@media(max-width: 576px)
+    .main-navigation
+        display: none
