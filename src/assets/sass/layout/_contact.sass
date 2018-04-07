@@ -45,11 +45,11 @@
 .input__radio
     align-self: flex-start
 
-.input__radio__item label
+    &__item label
     padding-left: 1.4rem
     margin-right: 2rem
 
-.input__radio__item
+    &__item
     height: auto
     display: inline-block
 
@@ -63,6 +63,11 @@
     .contact__wrapper
         display: grid
         grid-template-columns: 2fr 3fr
+
+    @media (max-width: $small)
+        .contact__wrapper
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr
 
     // .contact-form form
     //     display: grid

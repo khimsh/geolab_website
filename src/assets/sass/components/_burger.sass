@@ -1,0 +1,53 @@
+/**************************
+ * Burger Icon Styles
+ **************************/
+#burger-icon
+	height: 4rem
+	width: 4.5rem
+	position: relative
+	display: block
+	cursor: pointer
+
+	.bar-top,
+	.bar-middle,
+	.bar-bottom
+		background: $main-purple
+		border-radius: 0
+		display: block
+		height: .4rem
+		opacity: 1
+		position: absolute
+		transition: .25s ease-in-out
+
+	.bar-top
+		top: 0
+		width: 4.5rem
+
+	.bar-middle
+		width: 3.5rem
+		right: 0
+		top: 1.8rem
+
+	.bar-bottom
+		width: 4.5rem
+		bottom: 0
+
+// When clicked
+#burger-icon.active
+	.bar-middle
+		opacity: 0
+
+	.bar-top
+		transform: rotate(45deg)
+		width: 3rem
+		top: 46%
+
+	.bar-bottom
+		transform: rotate(-45deg)
+		width: 3rem
+		bottom: 46%
+
+// Hide on large screen
+@media (min-width: 768px)
+    #burger-icon
+        display: none

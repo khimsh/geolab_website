@@ -11,17 +11,14 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-4">
+        <div class="header__wrapper">
             <div class="header__logo">
               <h1 class="sr-only">Web Design</h1>
               <a href="#">
                 <img class="header__logo-img" src="assets/images/Mainlogo.png" alt="site logo">
               </a>
             </div><!-- .header__logo -->
-          </div><!-- .col -->
 
-          <div class="col-4">
             <nav class="main-navigation">
               <h2 class="sr-only">main navigation</h2>
               <ul class="main-navigation__list-wrapper">
@@ -32,11 +29,12 @@
             </nav>
 
             <!-- Burger Icon -->
-            <div id="menu-trigger">
-              <span></span>
+            <div id="burger-icon">
+              <span class="bar-top"></span>
+              <span class="bar-middle"></span>
+              <span class="bar-bottom"></span>
             </div>
-          </div><!-- .col -->
-        </div><!-- .row -->
+        </div><!-- .header__wrapper -->
       </div><!-- .container -->
 
       <div class="header__banner">
@@ -55,37 +53,41 @@
           <p class="section__description">Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film</p>
           <div class="section__list">
             <div class="row justify-content-between">
+
               <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
-                <div class="section__card">
-                  <figure>
+                <div class="about__card">
+                  <div class="about__card__image">
                     <img class="section__card_image" src="assets/images/Mini1.jpg" alt="img one"/>
-                    <figcaption>
-                      <h3 class="section__card_title">lorem ipsum</h3><span class="logo logo-one"></span>
-                    </figcaption>
-                  </figure>
-                </div><!-- .section__card -->
+                  </div>
+                  <div class="about__card__title">
+                    <h3 class="section__card_title">lorem ipsum</h3>
+                  </div>
+                  <span class="icon icon-one"></span>
+                </div><!-- .about__card -->
               </div><!-- col -->
 
               <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
-                <div class="section__card">
-                  <figure>
-                    <img class="section__card_image" src="assets/images/Mini2.jpg" alt="img two"/>
-                    <figcaption>
-                      <h3 class="section__card_title">lorem ipsum</h3><span class="logo logo-two"></span>
-                    </figcaption>
-                  </figure>
-                </div><!-- .section__card -->
+                <div class="about__card">
+                  <div class="about__card__image">
+                      <img class="section__card_image" src="assets/images/Mini2.jpg" alt="img two"/>
+                  </div>
+                  <div class="about__card__title">
+                    <h3 class="section__card_title">lorem ipsum</h3>
+                  </div>
+                  <span class="icon icon-two"></span>
+                </div><!-- .about__card -->
               </div><!-- col -->
 
               <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
-                <div class="section__card">
-                  <figure>
+                <div class="about__card">
+                  <div class="about__card__image">
                     <img class="section__card_image" src="assets/images/Mini3.jpg" alt="img three"/>
-                    <figcaption>
-                      <h3 class="section__card_title">lorem ipsum</h3><span class="logo logo-three"></span>
-                    </figcaption>
-                  </figure>
-                </div><!-- .section__card -->
+                  </div>
+                  <div class="about__card__title">
+                    <h3 class="section__card_title">lorem ipsum</h3>
+                  </div>
+                  <span class="icon icon-three"></span>
+                </div><!-- .about__card -->
               </div><!-- col -->
             </div><!-- .row -->
           </div><!-- .section__list -->
@@ -96,34 +98,50 @@
         <!-- Gallery Section -->
         <section class="section section__gallery" id="gallery">
           <h2 class="section__header">gallery</h2>
-          <div class="section__gallery">
+          <div class="section__gallery__wrapper">
             <div class="row justify-content-between">
               <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <figure class="section__gallery__item">
-                  <img src="assets/images/gallery1.jpg" alt="alt text one"/>
-                  <figcaption>Wildlife</figcaption>
-                </figure>
+                <div class="gallery__card">
+                  <div class="gallery__card__image__wrap">
+                    <img src="assets/images/gallery1.jpg" alt="wildlife" class="gallery__card__image"/>
+                  </div>
+                  <div class="gallery__card__title">
+                    <h3>Wildlife</h3>
+                  </div>
+                </div><!-- .gallery__card -->
               </div><!-- .col -->
 
               <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <figure class="section__gallery__item">
-                  <img src="assets/images/gallery2.png" alt="alt text two"/>
-                  <figcaption>Portrait</figcaption>
-                </figure>
+                <div class="gallery__card">
+                  <div class="gallery__card__image__wrap">
+                      <img src="assets/images/gallery2.png" alt="portrait" class="gallery__card__image"/>
+                  </div>
+                  <div class="gallery__card__title">
+                    <h3>Portrait</h3>
+                  </div>
+                </div><!-- .gallery__card -->
               </div><!-- .col -->
 
               <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <figure class="section__gallery__item">
-                  <img src="assets/images/gallery3.jpg" alt="alt text three"/>
-                  <figcaption>Animals</figcaption>
-                </figure>
+                <div class="gallery__card">
+                  <div class="gallery__card__image__wrap">
+                      <img src="assets/images/gallery3.jpg" alt="animals" class="gallery__card__image"/>
+                  </div>
+                  <div class="gallery__card__title">
+                    <h3>Animals</h3>
+                  </div>
+                </div><!-- .gallery__card -->
               </div><!-- .col -->
 
               <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <figure class="section__gallery__item">
-                  <img src="assets/images/gallery4.jpg" alt="alt text four"/>
-                  <figcaption>Black&amp;White</figcaption>
-                </figure>
+                <div class="gallery__card">
+                  <div class="gallery__card__image__wrap">
+                    <img src="assets/images/gallery4.jpg" alt="black&amp;white__wrap" class="gallery__card__image"/>
+                  </div>
+                  <div class="gallery__card__title">
+                    <h3>Black&amp;White</h3>
+                  </div>
+                </div><!-- .gallery__card -->
               </div><!-- .col -->
             </div><!-- .row -->
           </div><!-- .section-gallery -->
@@ -138,7 +156,7 @@
               <h2 class="section__header--contact">contact</h2>
               <div class="contact__wrapper">
 
-                <div id="map">
+                <div id="map" class="hide-on-small-and-down">
                 <!-- Google Maps -->
                 </div>
 
@@ -182,7 +200,7 @@
                         </div><!-- .input__radio__item -->
                       </div><!-- .input__radio -->
 
-                      <div class="input__checkbox">
+                      <div class="input__checkbox hide-on-medium-and-down">
                         <h3 class="newsletter">Sign up for newsletter:</h3>
                         <div class="input__checkbox__item">
                           <input type="checkbox" name="newsletter" id="images">
