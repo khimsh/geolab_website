@@ -10,41 +10,44 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-            <div class="header__logo">
-              <h1 class="sr-only">Web Design</h1>
-              <a href="#">
-                <img class="header__logo-img" src="assets/images/Mainlogo.png" alt="site logo">
-              </a>
-            </div><!-- .header__logo -->
+      <div class="header__wrapper__outer">
+        <div class="container">
+          <div class="header__wrapper">
+              <div class="header__logo">
+                <h1 class="sr-only">Web Design</h1>
+                <a href="#">
+                  <img class="header__logo-img" src="assets/images/Mainlogo.png" alt="photographer owl">
+                </a>
+              </div><!-- .header__logo -->
 
-            <nav class="main-navigation">
-              <h2 class="sr-only">main navigation</h2>
-              <ul class="main-navigation__list-wrapper">
-                <li><a class="active" href="#">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
-              </ul>
-            </nav>
+              <div class="nav-wrapper">
+                <nav class="main-navigation">
+                  <h2 class="sr-only">main navigation</h2>
+                  <ul class="main-navigation__list-wrapper">
+                    <li><a class="active nav-link" href="#">home</a></li>
+                    <li><a class="nav-link" href="#about">about</a></li>
+                    <li><a class="nav-link" href="#contact">contact</a></li>
+                  </ul>
+                </nav>
 
-            <!-- Burger Icon -->
-            <div id="burger-icon">
-              <span class="bar-top"></span>
-              <span class="bar-middle"></span>
-              <span class="bar-bottom"></span>
-            </div>
-        </div><!-- .header__wrapper -->
-      </div><!-- .container -->
+                <!-- Burger Icon -->
+                <div id="burger-icon">
+                  <span class="bar-top"></span>
+                  <span class="bar-middle"></span>
+                  <span class="bar-bottom"></span>
+                </div><!-- #burger-icon -->
 
-      <div class="header__banner">
-        <p class="header__banner__text">main text body</p>
-        <span class="arrow"></span>
-      </div><!-- .header__banner -->
+              </div><!-- .nav-wrapper -->
+          </div><!-- .header__wrapper -->
+        </div><!-- .container -->
+      </div>
+
+      <h1 class="header__text">main text body</h1>
+      <a href="#main" class="header__arrow"></a>
     </header>
 
     <!-- Main -->
-    <main>
+    <main id="main">
       <div class="container">
 
         <!-- About Section -->
@@ -153,7 +156,7 @@
           <div class="col-lg-10 offset-lg-1">
 
             <section class="section section__contact" id="contact">
-              <h2 class="section__header--contact">contact</h2>
+              <h2 class="section__header section__header--contact">contact</h2>
               <div class="contact__wrapper">
 
                 <div id="map" class="hide-on-small-and-down">
@@ -163,66 +166,72 @@
                 <div class="contact-form">
                   <form>
                     <div class="group-one">
-                      <div class="input__text">
-                        <div class="input__text__item">
-                          <input type="text" name="name" id="name" placeholder="name">
-                          <label for="name">name</label>
-                        </div><!-- .input__text__item -->
-                        <div class="input__text__item">
-                          <input type="email" name="email" id="email" placeholder="email">
-                          <label for="email">email</label>
-                        </div><!-- .input__text__item -->
-                        <div class="input__text__item">
-                          <input type="text" name="subject" id="subject" placeholder="subject">
-                          <label for="subject">subject</label>
-                        </div><!-- .input__text__item -->
-                        <div class="input__text__item">
-                          <textarea name="textarea" cols="30" rows="6" placeholder="text"></textarea>
-                        </div><!-- .input__text__item -->
-                      </div><!-- .input__text -->
+                      <div class="group-one__left">
+                          <div class="input__text">
+                            <div class="input__text__item">
+                              <input type="text" name="name" id="name" placeholder="name">
+                              <label for="name">name</label>
+                            </div><!-- .input__text__item -->
+                            <div class="input__text__item">
+                              <input type="email" name="email" id="email" placeholder="email">
+                              <label for="email">email</label>
+                            </div><!-- .input__text__item -->
+                            <div class="input__text__item">
+                              <input type="text" name="subject" id="subject" placeholder="subject">
+                              <label for="subject">subject</label>
+                            </div><!-- .input__text__item -->
+                            <div class="input__text__item">
+                              <textarea name="textarea" cols="30" rows="6" placeholder="text"></textarea>
+                            </div><!-- .input__text__item -->
+                          </div><!-- .input__text -->
+                      </div>
 
+
+                      <div class="group-one__right">
+                        <div class="input__radio">
+                          <div class="input__radio__item">
+                            <input type="radio" name="gender" value="male" id="male">
+                            <label for="male">male</label>
+                          </div><!-- .input__radio__item -->
+                          <div class="input__radio__item">
+                            <input type="radio" name="gender" value="female" id="female">
+                            <label for="female">female</label>
+                          </div><!-- .input__radio__item -->
+                        </div><!-- .input__radio -->
+  
+                        <div class="input__checkbox hide-on-medium-and-down">
+                          <h3 class="newsletter">Sign up for newsletter:</h3>
+                          <div class="input__checkbox__item">
+                            <input type="checkbox" name="newsletter" id="images">
+                            <label for="images">receive images</label>
+                          </div><!-- .input__checkbox__item -->
+  
+                          <div class="input__checkbox__item">
+                              <input type="checkbox" name="newsletter" id="promotions">
+                              <label for="promotions">receive promotions</label>
+                          </div><!-- .input__checkbox__item -->
+
+                          <div class="input__checkbox__item">
+                              <input type="checkbox" name="newsletter" id="updates">
+                              <label for="updates">receive updates</label>
+                          </div><!-- .input__checkbox__item -->
+
+                          <div class="input__checkbox__item">
+                              <input type="checkbox" name="newsletter" id="cameras">
+                              <label for="cameras">receive new cameras</label>
+                          </div><!-- .input__checkbox__item -->
+                        </div><!-- .input__checkbox -->
+                      </div>
+                    </div><!-- .goup-one -->
+
+                    <div class="group-two">
                       <div class="social-media-icons">
                         <a class="social-media" href=""><span class="icon-google-plus"></span></a>
                         <a class="social-media" href=""><span class="icon-facebook"></span></a>
                         <a class="social-media" href=""><span class="icon-twitter"></span></a>
                       </div><!-- .social-media-icons -->
-                    </div><!-- .goup-one -->
 
-                    <div class="group-two">
-                      <div class="input__radio">
-                        <div class="input__radio__item">
-                          <input type="radio" name="gender" value="male" id="male">
-                          <label for="male">male</label>
-                        </div><!-- .input__radio__item -->
-                        <div class="input__radio__item">
-                          <input type="radio" name="gender" value="female" id="female">
-                          <label for="female">female</label>
-                        </div><!-- .input__radio__item -->
-                      </div><!-- .input__radio -->
-
-                      <div class="input__checkbox hide-on-medium-and-down">
-                        <h3 class="newsletter">Sign up for newsletter:</h3>
-                        <div class="input__checkbox__item">
-                          <input type="checkbox" name="newsletter" id="images">
-                          <label for="images">receive images</label>
-                        </div><!-- .input__checkbox__item -->
-
-                        <div class="input__checkbox__item">
-                            <input type="checkbox" name="newsletter" id="promotions">
-                            <label for="promotions">receive promotions</label>
-                        </div><!-- .input__checkbox__item -->
-
-                        <div class="input__checkbox__item">
-                            <input type="checkbox" name="newsletter" id="updates">
-                            <label for="updates">receive updates</label>
-                        </div><!-- .input__checkbox__item -->
-
-                        <div class="input__checkbox__item">
-                            <input type="checkbox" name="newsletter" id="cameras">
-                            <label for="cameras">receive new cameras</label>
-                        </div><!-- .input__checkbox__item -->
-                      </div><!-- .input__checkbox -->
-                      <button type="submit">SEND</button>
+                      <button type="submit" class="btn-submit">SEND</button>
                     </div><!-- .gourp-two -->
                   </form>
                 </div><!-- .contact-form -->

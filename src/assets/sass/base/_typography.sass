@@ -2,14 +2,19 @@
  * Typography
  **************************/
 
-@font-face
-    font-family: 'BPG Nino Mtavruli Bold'
-    src: url('../fonts/bpg-nino-mtavruli-bold-webfont.eot') /* IE9 Compat Modes */
-    src: url('../fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/bpg-nino-mtavruli-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/bpg-nino-mtavruli-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/bpg-nino-mtavruli-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold') format('svg') /* Legacy iOS */
+/**
+ * Navigation typography
+ **/
+.nav-link
+    color: $link-black
+    text-transform: uppercase
+    font-size: 2rem
+    font-family: $myriadPro
 
-@font-face
-    font-family: 'Myriad Pro Regular'
-    src: url('../fonts/Myriad Pro Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/MyriadPro-Regular.otf') format('opentype') /* Legacy iOS */
+@media (max-width: $small)
+    .nav-link
+        font-size: 4rem
+
 
 /**
  * Section typography
@@ -21,12 +26,11 @@
     text-align: center
 
 .section__header--contact
-    font-family: $myriadPro
     font-size: 4.5rem
     font-weight: 400
-    text-transform: uppercase
     color: #FCFCFC
-    color: rgb(252, 252, 252)
+    text-align: left
+
 
 .section__description
     font-family: $font-nino
@@ -38,7 +42,7 @@
 /**
  * Banner typography
  **/
-.header__banner__text
+.header__text
     font-family: $myriadPro
     font-size: 7.2rem
     color: $white
@@ -46,7 +50,7 @@
     white-space: nowrap
 
 @media(max-width: $small)
-    .header__banner__text
+    .header__text
         font-size: 6.5rem
 
 @media(max-width: $xs-small)
@@ -69,13 +73,11 @@
 .input__text label
     font-family: $myriadPro
     font-size: 1.3rem
-    line-height: 58.44px
     color: $black
 
 .newsletter
     font-family: $myriadPro
     font-size: 1.6rem
-    line-height: 58.44px
     letter-spacing: 3.2px
     color: $black
     white-space: nowrap
@@ -83,16 +85,23 @@
 .input__radio label
     font-family: $myriadPro
     font-size: 1.6rem
-    line-height: 58.44px
     letter-spacing: 3.2px
     color: $black
 
 .input__checkbox__item label
     font-family: $myriadPro
     font-size: 1.6rem
-    line-height: 58.44px
     letter-spacing: 3.2px
     color: $black
+
+/**
+ * Button typography
+ **/
+
+#{$all-buttons}
+    font-size: 2.2rem
+    font-family: $myriadPro
+    color: $white
 
 /**
  * Footer typography

@@ -1,42 +1,49 @@
+/**************************
+ * Main Navigation
+ **************************/
+
+// .nav-wrapper
+//     position: relative
+
 .main-navigation
     height: 100%
     display: flex
     align-items: center
 
-.main-navigation__list-wrapper
-    display: flex
-    flex-direction: row
-    li
-        font-size: 2rem
-        font-family: $myriadPro
-        a
-            color: $link-black
-            text-transform: uppercase
-            padding: 1.1rem
-            display: inline-block
-            margin-right: 2.2rem
+    &__list-wrapper
+        display: flex
+        flex-direction: row
 
-@media (min-width: 769px)
-    a.active
-        border-bottom: 3px solid $main-purple
+@media (min-width: $small)
+    .nav-link
+        padding: 1.1rem
+        display: inline-block
+        margin-right: 2.2rem
+        &.active
+            border-bottom: 3px solid $main-purple
 
-@media(max-width: 768px)
+@media (max-width: $small)
     .main-navigation
-        position: fixed
+        position: absolute
         top: 0
         left: 0
-        right: 0
-        bottom: 0
+        width: 100%
+        height: 100%
         background-color: rgba(255,255,255,.8)
         z-index: 10
         display: none
         .main-navigation__list-wrapper
             width: 100%
-            height: 100%
+            height: auto
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            li
-                font-size: 4rem
-                margin-bottom: 5rem
+            margin-top: 15rem
+    &.open
+        display: flex
+
+    .nav-link
+        display: block
+        margin-bottom: 5rem
+
