@@ -12,18 +12,25 @@
     height: 100%
     width: 100%
 
+@media (max-width: $medium)
+    .contact__wrapper
+        transform: translate(0rem, 0rem)
+        flex-direction: column
+
 #map
     width: 35%
+
+@media (max-width: $medium)
+    #map
+        width: 100%
+        height: 32.5rem
 
 .contact-form
     background-color: $grey
     width: 65%
 
     form
-        padding-left: 2.5rem
-        padding-top: 5rem
-        padding-bottom: 4rem
-        padding-right: 5rem
+        padding: 5rem 3rem
         display: flex
         flex-direction: column
         height: 100%
@@ -44,6 +51,13 @@
     &__left, &__right
         width: 50%
 
+@media (max-width: $small)
+    .group-one
+        flex-direction: column
+
+        &__left, &__right
+            width: 100%
+
 /**
  * Input Type Text
  */
@@ -61,6 +75,24 @@
         opacity: 0
         visibility: hidden
 
+@media (max-width: $small)
+    .input__text__item
+        input
+            width: 100%
+
+@media (max-width: $medium)
+    textarea
+        right: -31.5rem
+        top: -14rem
+        width: 100%
+        position: absolute
+
+@media (max-width: $small)
+    textarea
+        position: relative
+        right: 0
+        top: 0
+
 
 /**
  * Input Type Radio
@@ -77,6 +109,10 @@
     &__item:not(:last-child) label
         margin-right: 4rem
 
+@media (max-width: $small)
+    .input__radio
+        margin-bottom: 2rem
+
 /**
  * Input Type Checkbox
  */
@@ -90,6 +126,10 @@
 .input__checkbox__item:not(:last-child)
     padding-bottom: 2rem
 
+@media (max-width: 1200px) and (min-width: $medium)
+    .input__checkbox__item label
+        margin-left: 1.7rem
+
 
 /**
  * Input Group Two
@@ -102,15 +142,10 @@
 .btn-submit
     margin-right: 2rem
 
-/**
- * display: grid for modern browsers
- **/
-// @supports (display: grid)
-//     .contact__wrapper
-//         display: grid
-//         grid-template-columns: 2fr 4fr
+@media (max-width: $medium)
+    .group-two
+        display: block
 
-//     @media (max-width: $small)
-//         .contact__wrapper
-//             grid-template-columns: 1fr
-//             grid-template-rows: 1fr 1fr
+    .btn-submit
+        margin-right: 0px
+        float: right

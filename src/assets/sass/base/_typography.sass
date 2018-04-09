@@ -5,6 +5,7 @@
 /**
  * Navigation typography
  **/
+
 .nav-link
     color: $link-black
     text-transform: uppercase
@@ -19,6 +20,7 @@
 /**
  * Section typography
  **/
+
 .section__header
     font-family: $myriadPro
     text-transform: uppercase
@@ -31,6 +33,11 @@
     color: #FCFCFC
     text-align: left
 
+@media (max-width: $medium)
+    .section__header--contact
+        color: $black
+        text-align: center
+
 
 .section__description
     font-family: $font-nino
@@ -40,8 +47,9 @@
     text-align: center
 
 /**
- * Banner typography
+ * Header typography
  **/
+
 .header__text
     font-family: $myriadPro
     font-size: 7.2rem
@@ -49,17 +57,18 @@
     text-transform: uppercase
     white-space: nowrap
 
-@media(max-width: $small)
+@media(max-width: $medium)
     .header__text
         font-size: 6.5rem
 
-@media(max-width: $xs-small)
-    .header__banner__text
+@media(max-width: $small)
+    .header__text
         font-size: 4rem
 
 /**
  * About section typography
  **/
+
 .section__card_title
     font-family: $myriadPro
     font-size: 2.3rem
@@ -70,10 +79,15 @@
 /**
  * Contact Section typography
  **/
+
 .input__text label
     font-family: $myriadPro
     font-size: 1.3rem
     color: $black
+
+.input__text input,
+textarea
+    font-size: 1.6rem
 
 .newsletter
     font-family: $myriadPro
@@ -94,6 +108,10 @@
     letter-spacing: 3.2px
     color: $black
 
+@media (max-width: 1200px) and (min-width: $medium)
+    .input__checkbox__item label
+        letter-spacing: 2.2px
+
 /**
  * Button typography
  **/
@@ -101,6 +119,7 @@
 #{$all-buttons}
     font-size: 2.2rem
     font-family: $myriadPro
+    font-weight: 400
     color: $white
 
 /**
@@ -120,3 +139,10 @@
     color: $white
     line-height: 60.2px
     letter-spacing: 0.85px
+
+@media(max-width: $small)
+    .copyright
+        font-size: 2.7rem
+
+    .author, .author a
+        font-size: 2.1rem

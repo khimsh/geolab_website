@@ -1,10 +1,18 @@
 .footer
-    height: 8rem
     background-color: $main-purple
     display: flex
     align-items: center
 
-@media(min-width: 576px)
+    .container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+@media(max-width: $small)
+    .footer
+        .container
+            flex-direction: column
+
     .copyright,
     .author
         text-align: center
