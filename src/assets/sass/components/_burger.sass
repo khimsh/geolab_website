@@ -1,12 +1,14 @@
 /**************************
  * Burger Icon Styles
  **************************/
+
 #burger-icon
 	height: 4rem
 	width: 4.5rem
 	position: relative
 	display: block
 	cursor: pointer
+	z-index: 11
 
 	.bar-top,
 	.bar-middle,
@@ -34,7 +36,6 @@
 
 // When clicked
 #burger-icon.active
-	z-index: 11
 
 	.bar-middle
 		opacity: 0

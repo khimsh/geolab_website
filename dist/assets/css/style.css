@@ -252,7 +252,8 @@ button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover
   width: 4.5rem;
   position: relative;
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 11; }
   #burger-icon .bar-top,
   #burger-icon .bar-middle,
   #burger-icon .bar-bottom {
@@ -275,20 +276,20 @@ button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover
     width: 4.5rem;
     bottom: 0; }
 
-#burger-icon.active {
-  z-index: 11; }
-  #burger-icon.active .bar-middle {
-    opacity: 0; }
-  #burger-icon.active .bar-top {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    width: 3rem;
-    top: 46%; }
-  #burger-icon.active .bar-bottom {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    width: 3rem;
-    bottom: 46%; }
+#burger-icon.active .bar-middle {
+  opacity: 0; }
+
+#burger-icon.active .bar-top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 3rem;
+  top: 46%; }
+
+#burger-icon.active .bar-bottom {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 3rem;
+  bottom: 46%; }
 
 @media (min-width: 768px) {
   #burger-icon {
@@ -451,9 +452,8 @@ input[type="checkbox"] {
 .header__logo-img {
   height: 9rem;
   width: 9rem;
-  position: relative; }
-  .header__logo-img--active {
-    z-index: 11; }
+  position: relative;
+  z-index: 11; }
 
 /**************************
  * Link Styles
@@ -492,10 +492,12 @@ input[type="checkbox"] {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120vh;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 10;
-    display: none; }
+    display: none;
+    height: 0;
+    -webkit-transition: height 1s;
+    transition: height 1s; }
     .main-navigation .main-navigation__list-wrapper {
       width: 100%;
       height: auto;
@@ -513,10 +515,11 @@ input[type="checkbox"] {
           -ms-flex-align: center;
               align-items: center;
       margin-top: 15rem; }
-  .open {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    .main-navigation.open {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100vh; }
   .nav-link {
     display: block;
     margin-bottom: 5rem; } }
