@@ -1,5 +1,5 @@
 # geolab_website
 
-ვებსაიტი ჟეოლაბის სტაჟირებისთვის.
+ვებსაიტი ჯეოლაბის სტაჟირებისთვის.
 
 preview at [khimsh.github.io/geolab_website](https://khimsh.github.io/geolab_website/dist/index.html)
