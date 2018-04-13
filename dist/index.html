@@ -13,36 +13,41 @@
       <div class="header__wrapper__outer">
         <div class="container">
           <div class="header__wrapper">
-              <div class="header__logo">
-                <h1 class="sr-only">Web Design</h1>
-                <a href="#">
-                  <img class="header__logo-img" src="assets/images/Mainlogo.png" alt="photographer owl">
-                </a>
-              </div><!-- .header__logo -->
 
-              <div class="nav-wrapper">
-                <nav class="main-navigation">
-                  <h2 class="sr-only">main navigation</h2>
-                  <ul class="main-navigation__list-wrapper">
-                    <li><a class="active nav-link" href="#">home</a></li>
-                    <li><a class="nav-link" href="#about">about</a></li>
-                    <li><a class="nav-link" href="#contact">contact</a></li>
-                  </ul>
-                </nav>
+            <!-- Site Title & Logo -->
+            <div class="header__logo">
+              <h1 class="sr-only">Web Design</h1>
 
-                <!-- Burger Icon -->
-                <div id="burger-icon">
-                  <span class="bar-top"></span>
-                  <span class="bar-middle"></span>
-                  <span class="bar-bottom"></span>
-                </div><!-- #burger-icon -->
+              <a href="#">
+                <img class="header__logo-img" src="assets/images/Mainlogo.png" alt="photographer owl">
+              </a>
+            </div><!-- .header__logo -->
 
-              </div><!-- .nav-wrapper -->
+            <!-- Main Navigation -->
+            <div class="nav-wrapper">
+              <nav class="main-nav">
+                <h2 class="sr-only">main navigation</h2>
+                <ul class="main-nav__list">
+                  <li><a class="main-nav__list__item active" href="#">home</a></li>
+                  <li><a class="main-nav__list__item" href="#about">about</a></li>
+                  <li><a class="main-nav__list__item" href="#contact">contact</a></li>
+                </ul>
+              </nav>
+
+              <!-- Burger Icon -->
+              <div id="burger-icon">
+                <span class="bar-top"></span>
+                <span class="bar-middle"></span>
+                <span class="bar-bottom"></span>
+              </div><!-- #burger-icon -->
+
+            </div><!-- .nav-wrapper -->
           </div><!-- .header__wrapper -->
         </div><!-- .container -->
-      </div>
+      </div><!--.header__wrapper__outer -->
 
       <h1 class="header__text">main text body</h1>
+
       <a href="#main" class="header__arrow"></a>
     </header>
 
@@ -50,157 +55,162 @@
     <main id="main">
       <div class="container">
 
-        <!-- About Section -->
+        <!-- Section: About -->
         <section class="section section__about" id="about">
+
           <h2 class="section__header">about photography</h2>
           <p class="section__description">Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film</p>
-          <div class="section__list">
-            <div class="row justify-content-between">
 
-              <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
-                <div class="about__card">
-                  <div class="about__card__image">
-                    <img class="section__card_image" src="assets/images/Mini1.jpg" alt="img one"/>
-                  </div>
-                  <div class="about__card__title">
-                    <h3 class="section__card_title">lorem ipsum</h3>
-                  </div>
-                  <span class="icon icon-one"></span>
-                </div><!-- .about__card -->
-              </div><!-- col -->
+          <div class="row justify-content-between">
 
-              <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
-                <div class="about__card">
-                  <div class="about__card__image">
-                      <img class="section__card_image" src="assets/images/Mini2.jpg" alt="img two"/>
-                  </div>
-                  <div class="about__card__title">
-                    <h3 class="section__card_title">lorem ipsum</h3>
-                  </div>
-                  <span class="icon icon-two"></span>
-                </div><!-- .about__card -->
-              </div><!-- col -->
+            <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
+              <div class="card card--about">
+                <div class="card__image__wrap">
+                  <img class="card__image" src="assets/images/Mini1.jpg" alt="img one"/>
+                </div>
+                <h3 class="card__title card__title--about">lorem ipsum</h3>
+                <span class="card__icon card__icon--one"></span>
+              </div><!-- .card -->
+            </div><!-- col -->
 
-              <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
-                <div class="about__card">
-                  <div class="about__card__image">
-                    <img class="section__card_image" src="assets/images/Mini3.jpg" alt="img three"/>
-                  </div>
-                  <div class="about__card__title">
-                    <h3 class="section__card_title">lorem ipsum</h3>
-                  </div>
-                  <span class="icon icon-three"></span>
-                </div><!-- .about__card -->
-              </div><!-- col -->
-            </div><!-- .row -->
-          </div><!-- .section__list -->
+            <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
+              <div class="card card--about">
+                <div class="card__image__wrap">
+                  <img class="card__image" src="assets/images/Mini2.jpg" alt="img two"/>
+                </div>
+                <h3 class="card__title card__title--about">lorem ipsum</h3>
+                <span class="card__icon card__icon--two"></span>
+              </div><!-- .card -->
+            </div><!-- col -->
+
+            <div class="col-lg-4 col-md-8 col-sm-10 offset-md-2 offset-sm-1 offset-lg-0">
+              <div class="card card--about">
+                <div class="card__image__wrap">
+                  <img class="card__image" src="assets/images/Mini3.jpg" alt="img three"/>
+                </div>
+                <h3 class="card__title card__title--about">lorem ipsum</h3>
+                <span class="card__icon card__icon--three"></span>
+              </div><!-- .card -->
+            </div><!-- col -->
+
+          </div><!-- .row -->
         </section>
+      </div><!-- .container -->
 
-        <hr class="section-divider">
+      <hr class="section-divider section-divider--first">
 
-        <!-- Gallery Section -->
+      <div class="container">
+        <!-- Section: Gallery -->
         <section class="section section__gallery" id="gallery">
+
           <h2 class="section__header">gallery</h2>
-          <div class="section__gallery__wrapper">
-            <div class="row justify-content-between">
-              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <div class="gallery__card">
-                  <div class="gallery__card__image__wrap">
-                    <img src="assets/images/gallery1.jpg" alt="wildlife" class="gallery__card__image"/>
-                  </div>
-                  <div class="gallery__card__title">
-                    <h3>Wildlife</h3>
-                  </div>
-                </div><!-- .gallery__card -->
-              </div><!-- .col -->
 
-              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <div class="gallery__card">
-                  <div class="gallery__card__image__wrap">
-                      <img src="assets/images/gallery2.png" alt="portrait" class="gallery__card__image"/>
-                  </div>
-                  <div class="gallery__card__title">
-                    <h3>Portrait</h3>
-                  </div>
-                </div><!-- .gallery__card -->
-              </div><!-- .col -->
+          <div class="row justify-content-between">
 
-              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <div class="gallery__card">
-                  <div class="gallery__card__image__wrap">
-                      <img src="assets/images/gallery3.jpg" alt="animals" class="gallery__card__image"/>
-                  </div>
-                  <div class="gallery__card__title">
-                    <h3>Animals</h3>
-                  </div>
-                </div><!-- .gallery__card -->
-              </div><!-- .col -->
+            <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+              <div class="card card--gallery">
+                <div class="card__image__wrap card__image__wrap--gallery">
+                  <img src="assets/images/gallery1.jpg" alt="wildlife" class="card__image" />
+                </div>
+                <h3 class="card__title card__title--gallery">WildLife</h3>
+              </div><!-- .gallery__card -->
+            </div><!-- .col -->
 
-              <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
-                <div class="gallery__card">
-                  <div class="gallery__card__image__wrap">
-                    <img src="assets/images/gallery4.jpg" alt="black&amp;white__wrap" class="gallery__card__image"/>
-                  </div>
-                  <div class="gallery__card__title">
-                    <h3>Black&amp;White</h3>
-                  </div>
-                </div><!-- .gallery__card -->
-              </div><!-- .col -->
-            </div><!-- .row -->
-          </div><!-- .section-gallery -->
+            <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+              <div class="card card--gallery">
+                <div class="card__image__wrap card__image__wrap--gallery">
+                    <img src="assets/images/gallery2.png" alt="portrait" class="card__image"/>
+                </div>
+                <h3 class="card__title card__title--gallery">Portrait</h3>
+              </div><!-- .gallery__card -->
+            </div><!-- .col -->
+
+            <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+              <div class="card card--gallery">
+                <div class="card__image__wrap card__image__wrap--gallery">
+                    <img src="assets/images/gallery3.jpg" alt="animals" class="card__image"/>
+                </div>
+                <h3 class="card__title card__title--gallery">Animals</h3>
+              </div><!-- .gallery__card -->
+            </div><!-- .col -->
+
+            <div class="col-lg-3 col-md-6 col-sm-10 offset-sm-1 offset-lg-0 offset-md-0">
+              <div class="card card--gallery">
+                <div class="card__image__wrap card__image__wrap--gallery">
+                  <img src="assets/images/gallery4.jpg" alt="black&amp;white__wrap" class="card__image"/>
+                </div>
+                <h3 class="card__title card__title--gallery">Black&amp;White</h3>
+              </div><!-- .gallery__card -->
+            </div><!-- .col -->
+          </div><!-- .row -->
         </section>
 
-        <hr class="section-divider">
+        <hr class="section-divider section-divider--second">
 
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
 
+            <!-- Section: Contact -->
             <section class="section section__contact" id="contact">
               <h2 class="section__header section__header--contact">contact</h2>
               <div class="contact__wrapper">
 
-                <div id="map" class="hide-on-small-and-down">
                 <!-- Google Maps -->
-                </div>
+                <div id="map" class="hide-on-small-and-down"></div>
 
+                <!-- Contact Form -->
                 <div class="contact-form">
                   <form>
+
                     <div class="group-one">
+
                       <div class="group-one__left">
+
                           <div class="input__text">
+
                             <div class="input__text__item">
                               <input type="text" name="name" id="name" placeholder="name">
                               <label for="name">name</label>
                             </div><!-- .input__text__item -->
+
                             <div class="input__text__item">
                               <input type="email" name="email" id="email" placeholder="email">
                               <label for="email">email</label>
                             </div><!-- .input__text__item -->
+
                             <div class="input__text__item">
                               <input type="text" name="subject" id="subject" placeholder="subject">
                               <label for="subject">subject</label>
                             </div><!-- .input__text__item -->
+
                             <div class="input__text__item">
                               <textarea name="textarea" cols="30" rows="5" placeholder="text"></textarea>
                             </div><!-- .input__text__item -->
+
                           </div><!-- .input__text -->
-                      </div>
+                      </div><!-- .group-one__left -->
 
 
                       <div class="group-one__right">
+
                         <div class="input__radio">
+
                           <div class="input__radio__item">
                             <input type="radio" name="gender" value="male" id="male">
                             <label for="male">male</label>
                           </div><!-- .input__radio__item -->
+
                           <div class="input__radio__item">
                             <input type="radio" name="gender" value="female" id="female">
                             <label for="female">female</label>
                           </div><!-- .input__radio__item -->
+
                         </div><!-- .input__radio -->
 
                         <div class="input__checkbox hide-on-medium-and-down">
+
                           <h3 class="newsletter">Sign up for newsletter:</h3>
+
                           <div class="input__checkbox__item">
                             <input type="checkbox" name="newsletter" id="images">
                             <label for="images">receive images</label>
@@ -221,7 +231,7 @@
                               <label for="cameras">receive new cameras</label>
                           </div><!-- .input__checkbox__item -->
                         </div><!-- .input__checkbox -->
-                      </div>
+                      </div><!-- .group-one__right -->
                     </div><!-- .goup-one -->
 
                     <div class="group-two">
@@ -246,11 +256,12 @@
     <footer class="footer">
       <div class="container">
         <p class="copyright">&copy; copyright 2018</p>
-        <p class="author text-right">created by: <a href="mailto:">Ia Khimsh</a></p>
+        <p class="author">created by: <a href="mailto:" class="author--mail">Ia Khimsh</a></p>
       </div>
     </footer>
 
 
+    <!-- Google Maps -->
     <script>
       function initMap() {
         var uluru = {lat: 41.717578, lng: 44.7850189};
@@ -268,6 +279,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3QAgOAeWBnd9swEbrPNzD4nDD40vYWlY&callback=initMap">
     </script>
 
+    <!-- jQuery & JS -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>

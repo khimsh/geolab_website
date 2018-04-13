@@ -1,73 +1,110 @@
 /**************************
- * About Card Styles
+ * Cards
  **************************/
-.about__card
+.card
     position: relative
+    height: 23.7rem
+    width: 100%
+
+    &--about
+        @media (max-width: $medium)
+            margin-bottom: 2.7rem
+
+        @media (max-width: $small)
+            margin-bottom: 6.7rem
+
+    &--gallery
+        height: 22.5rem
+
+        @media (max-width: $medium)
+            margin-bottom: 9.8rem
+
+        @media (max-width: $small)
+            margin-bottom: 11.2rem
+
+    &__image__wrap
+        height: 21.34rem
+        width: 100%
+        overflow: hidden
+        position: relative
+
+        &--gallery
+            height: 22.5rem
+
+            img
+                object-position: 70% 50%
+
+        .card__image
+            height: 22.5rem
 
     &__image
-        max-height: 19.5rem
-        overflow: hidden
+        object-fit: cover
+        object-position: 50% 50%
+        width: 100%
+        height: 21.34rem
 
-    .icon
+    &__icon
         display: inline-block
         position: absolute
         top: 0px
         left: 50%
         transform: translate(-50%, -50%)
-        height: 55px
-        width: 55px
+        +size(5.5rem)
+
         background-color: $main-purple
         background-repeat: no-repeat
         background-position: center
-        border-radius: 100px
+        background-size: 68%
+
         border: 4px solid $white
-    .icon-one
-        background-image: url('../images/logo_1.png')
-    .icon-two
-        background-image: url('../images/logo_2.png')
-    .icon-three
-        background-image: url('../images/logo_3.png')
-
-.section__card_title
-    padding-top: 1rem
-
-@media (max-width: $medium)
-    .about__card
-        margin-bottom: 5rem
-
-/**************************
- * Gallery Card Styles
- **************************/
-.gallery__card
-    position: relative
-
-    &__image
-        height: 22rem
-        overflow: hidden
-        width: 100%
+        border-radius: 100px
+        &--one
+            background-image: url('../images/logo1.svg')
+        &--two
+            background-image: url('../images/logo2.svg')
+        &--three
+            background-image: url('../images/logo3.svg')
 
     &__title
-        width: 100%
-        position: absolute
-        bottom: 0
-        background-color: rgba(105,37,143,0.6)
-        opacity: 0
-        transition: all .3s
-    &:hover &__title
-        opacity: 1
-    h3
-        font-family: $myriadPro
-        font-size: 2.7rem
-        color: #FBFAFC
-        padding-left: .9rem
         padding-top: 1rem
-        padding-bottom: 1rem
+        font-size: 2.3rem
         font-weight: 400
+        color: $black
 
-@media (max-width: $medium)
-    .gallery__card
-        margin-bottom: 4.4rem
+        &--about
+            padding-top: .6rem
+            font-size: 1.8rem
+            text-transform: uppercase
 
-        &__title
+
+        &--gallery
+            width: 100%
+            position: absolute
+            bottom: 0
+
+            font-family: $myriadPro
+            font-size: 2.7rem
+            font-weight: 400
+
+            background-color: rgba(105,37,143,0.6)
+            color: #FBFAFC
+
+            padding-left: .9rem
+            padding-top: 1rem
+            padding-bottom: 1rem
+
+            opacity: 0
+            transition: all .3s
+
+/**
+ * Section Gallery card
+ **/
+
+.card--gallery
+    &:hover .card__title--gallery
+        opacity: 1
+
+    @media (max-width: $medium)
+        .card__title--gallery
             position: relative
             opacity: 1

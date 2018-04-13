@@ -6,14 +6,14 @@
  * Navigation typography
  **/
 
-.nav-link
+.main-nav__list__item
     color: $link-black
     text-transform: uppercase
     font-size: 2rem
     font-family: $myriadPro
+    line-height: 2.4rem
 
-@media (max-width: $small)
-    .nav-link
+    @media (max-width: $small)
         font-size: 4rem
 
 
@@ -25,16 +25,18 @@
     font-family: $myriadPro
     text-transform: uppercase
     font-size: 3.6rem
+    font-weight: 200
+    line-height: 43.2px
     text-align: center
 
 .section__header--contact
     font-size: 4.5rem
     font-weight: 400
+    line-height: 54px
     color: #FCFCFC
     text-align: left
 
-@media (max-width: $medium)
-    .section__header--contact
+    @media (max-width: $medium)
         color: $black
         text-align: center
 
@@ -53,28 +55,27 @@
 .header__text
     font-family: $myriadPro
     font-size: 7.2rem
-    color: $white
+    letter-spacing: 1px
     text-transform: uppercase
     white-space: nowrap
 
-@media(max-width: $medium)
-    .header__text
+    // Creates double border effect
+    -webkit-text-stroke: 1px $white
+    color: transparent
+
+
+    @media(max-width: $medium)
         font-size: 6.5rem
 
-@media(max-width: $small)
-    .header__text
+    @media(max-width: $small)
         font-size: 4rem
 
 /**
  * About section typography
  **/
 
-.section__card_title
+.card__title
     font-family: $myriadPro
-    font-size: 2.3rem
-    font-weight: 400
-    text-transform: uppercase
-    color: $black
 
 /**
  * Contact Section typography
@@ -108,9 +109,8 @@ textarea
     letter-spacing: 3.2px
     color: $black
 
-@media (max-width: 1200px) and (min-width: $medium)
-    .input__checkbox__item label
-        letter-spacing: 2.2px
+    @media (max-width: $lg) and (min-width: $medium)
+        letter-spacing: 1.2px
 
 /**
  * Button typography
@@ -132,6 +132,9 @@ textarea
     line-height: 60.2px
     letter-spacing: 0.9px
 
+    @media(max-width: $small)
+        font-size: 2.7rem
+
 .author, .author a
     font-family: $myriadPro
     font-size: 1.7rem
@@ -140,9 +143,5 @@ textarea
     line-height: 60.2px
     letter-spacing: 0.85px
 
-@media(max-width: $small)
-    .copyright
-        font-size: 2.7rem
-
-    .author, .author a
+    @media(max-width: $small)
         font-size: 2.1rem
