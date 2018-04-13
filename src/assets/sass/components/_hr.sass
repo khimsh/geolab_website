@@ -1,8 +1,26 @@
 /**
  * Section Divider Styles
  **/
+
 .section-divider
-    width: 100%
+    width: 94.6rem
     margin: 0 auto
-    height: 0.4rem
     background-color: $main-purple
+    border: 0
+
+    &--first
+        height: 0.4rem
+        @media (max-width: $medium)
+            width: 59.8rem
+            height: 0.5rem
+        @media (max-width: $small)
+            width: 100%
+
+    &--second
+        height: 0.6rem
+        @media (max-width: $medium)
+            width: 59.8rem
+            height: 0.4rem
+        @media (max-width: $small)
+            width: 45.4rem
+            height: .5rem
