@@ -34,7 +34,8 @@
             align-items: center
             margin: auto
 
-        &__item
+        &__item:link,
+        &__item:visited
             padding: 1.1rem
             display: inline-block
             margin-right: 2.2rem
@@ -50,7 +51,8 @@
                 background: $main-purple
                 transform:  translateX(-100%)
                 transition: transform .5s ease
-            &:hover:before
+            &:hover:before,
+            &:hover:active
                 transform:  translateX(0)
 
             @media (max-width: $sm)
