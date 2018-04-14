@@ -2203,8 +2203,8 @@ input[type="checkbox"] {
         width: 100%;
         height: 0.3rem;
         background: #5B0360;
-        -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
+        -webkit-transform: translateX(-110%);
+                transform: translateX(-110%);
         -webkit-transition: -webkit-transform .5s ease;
         transition: -webkit-transform .5s ease;
         transition: transform .5s ease;
