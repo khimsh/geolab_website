@@ -7,33 +7,7 @@
     display: flex
     align-items: center
 
-    &__list
-        display: flex
-        flex-direction: row
-
-@media (min-width: $small)
-    .main-nav__list__item
-        padding: 1.1rem
-        display: inline-block
-        margin-right: 2.2rem
-        overflow: hidden
-        position: relative
-        &:before
-            content: ""
-            position: absolute
-            left: 0
-            bottom: 0
-            width: 100%
-            height: 2px
-            background: $main-purple
-            transform:  translateX(-100%)
-            transition: transform .5s ease
-        &:hover:before
-            transform:  translateX(0)
-
-
-@media (max-width: $small)
-    .main-nav
+    @media (max-width: $sm)
         position: absolute
         top: 0
         left: 0
@@ -41,18 +15,51 @@
         width: 100%
         background-color: rgba(255,255,255,.8)
         z-index: 10
-        display: none
-        &__list
+        visibility: hidden
+        opacity: 0
+        transition: all .3s ease
+        &.open
+            visibility: visible
+            opacity: 1
+
+    &__list
+        display: flex
+        flex-direction: row
+
+        @media (max-width: $sm)
             width: 100%
             height: auto
-            display: flex
             flex-direction: column
             justify-content: center
             align-items: center
-            margin-top: 5rem
-            &__item
+            margin: auto
+
+        &__item
+            padding: 1.1rem
+            display: inline-block
+            margin-right: 2.2rem
+            overflow: hidden
+            position: relative
+            &:before
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 0.3rem
+                background: $main-purple
+                transform:  translateX(-100%)
+                transition: transform .5s ease
+            &:hover:before
+                transform:  translateX(0)
+
+            @media (max-width: $sm)
                 display: block
+                margin: 0
                 margin-bottom: 5rem
-        &.open
-            display: flex
+
+                &--last
+                    margin-bottom: 0
+
+
 
