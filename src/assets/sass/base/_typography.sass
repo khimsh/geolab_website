@@ -13,7 +13,7 @@
     font-family: $myriadPro
     line-height: 2.4rem
 
-    @media (max-width: $small)
+    @media (max-width: $sm)
         font-size: 4rem
 
 
@@ -36,13 +36,13 @@
     color: #FCFCFC
     text-align: left
 
-    @media (max-width: $medium)
+    @media (max-width: $md)
         color: $black
         text-align: center
 
 
 .section__description
-    font-family: $font-nino
+    font-family: $BPGNino
     font-size: 2.2rem
     font-weight: bold
     line-height: 3.2rem
@@ -55,19 +55,20 @@
 .header__text
     font-family: $myriadPro
     font-size: 7.2rem
+    font-weight: 400
     letter-spacing: 1px
     text-transform: uppercase
     white-space: nowrap
 
     // Creates double border effect
-    -webkit-text-stroke: 1px $white
+    -webkit-text-stroke: 2px $white
     color: transparent
 
 
-    @media(max-width: $medium)
+    @media(max-width: $md)
         font-size: 6.5rem
 
-    @media(max-width: $small)
+    @media(max-width: $sm)
         font-size: 4rem
 
 /**
@@ -109,7 +110,7 @@ textarea
     letter-spacing: 3.2px
     color: $black
 
-    @media (max-width: $lg) and (min-width: $medium)
+    @media (max-width: $lg) and (min-width: $md)
         letter-spacing: 1.2px
 
 /**
@@ -125,14 +126,14 @@ textarea
 /**
  * Footer typography
  **/
+
 .copyright
     font-family: $myriadPro
     font-size: 1.8rem
     color: $white
-    line-height: 60.2px
     letter-spacing: 0.9px
 
-    @media(max-width: $small)
+    @media(max-width: $sm)
         font-size: 2.7rem
 
 .author, .author a
@@ -140,8 +141,7 @@ textarea
     font-size: 1.7rem
     text-align: right
     color: $white
-    line-height: 60.2px
     letter-spacing: 0.85px
 
-    @media(max-width: $small)
+    @media(max-width: $sm)
         font-size: 2.1rem

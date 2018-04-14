@@ -1,10 +1,15 @@
 /**************************
  * Utility Classes
  **************************/
-@media (max-width: $medium)
+@media (max-width: $md)
     .hide-on-medium-and-down
         display: none
 
-@media (max-width: $small)
+@media (max-width: $sm)
     .hide-on-small-and-down
         display: none
+
+.sr-only
+    position: absolute !important
+    clip: rect(1px 1px 1px 1px) /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px)

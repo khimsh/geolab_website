@@ -7,20 +7,22 @@
     width: 100%
 
     &--about
-        @media (max-width: $medium)
+        @media (max-width: $md)
             margin-bottom: 2.7rem
 
-        @media (max-width: $small)
-            margin-bottom: 6.7rem
+        @media (max-width: $sm)
+            &:not(:last-child)
+                margin-bottom: 7.8rem
 
     &--gallery
-        height: 22.5rem
+        //height: 22.5rem
+        height: auto
 
-        @media (max-width: $medium)
-            margin-bottom: 9.8rem
+        @media (max-width: $md)
+            margin-bottom: 4.5rem
 
-        @media (max-width: $small)
-            margin-bottom: 11.2rem
+        @media (max-width: $sm)
+            margin-bottom: 6.1rem
 
     &__image__wrap
         height: 21.34rem
@@ -104,7 +106,7 @@
     &:hover .card__title--gallery
         opacity: 1
 
-    @media (max-width: $medium)
+    @media (max-width: $md)
         .card__title--gallery
             position: relative
             opacity: 1

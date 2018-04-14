@@ -6,6 +6,14 @@
     margin-bottom: 14rem
     height: 56rem
 
+    @media (max-width: $md)
+        height: auto
+        margin-bottom: 7.9rem
+
+    @media (max-width: $sm)
+        height: auto
+        margin-bottom: 5rem
+
 .contact__wrapper
     transform: translate(6rem, 2rem)
     display: flex
@@ -13,15 +21,14 @@
     height: 92.6%
     width: 100%
 
-@media (max-width: $medium)
-    .contact__wrapper
+    @media (max-width: $md)
         transform: translate(0rem, 0rem)
         flex-direction: column
 
 #map
     width: 35%
 
-@media (max-width: $medium)
+@media (max-width: $md)
     #map
         width: 100%
         height: 32.5rem
@@ -36,8 +43,10 @@
         flex-direction: column
         height: 100%
         justify-content: space-between
+        @media (max-width: $sm)
+            padding-bottom: 4rem
 
-@media (max-width: $medium)
+@media (max-width: $md)
     .contact-form
         width: 100%
 
@@ -53,7 +62,7 @@
     &__left, &__right
         width: 50%
 
-@media (max-width: $small)
+@media (max-width: $sm)
     .group-one
         flex-direction: column
 
@@ -77,25 +86,25 @@
         opacity: 0
         visibility: hidden
 
-@media (max-width: $medium)
+@media (max-width: $md)
     .input__text__item
         input
             width: 24.6rem
             height: 4rem
 
-@media (max-width: $small)
+@media (max-width: $sm)
     .input__text__item
         input
             width: 100%
 
-@media (max-width: $medium)
+@media (max-width: $md)
     textarea
         right: -29rem
         top: -14.6rem
         width: 291.3px
         position: absolute
 
-@media (max-width: $small)
+@media (max-width: $sm)
     textarea
         position: relative
         right: 0
@@ -110,7 +119,7 @@
 .input__radio
     display: flex
     flex-direction: row
-    margin-bottom: 11rem
+    margin-bottom: 12.5rem
 
     &__item input
         margin-right: 2rem
@@ -119,12 +128,12 @@
         margin-right: 4rem
         @media (max-width: $lg)
             margin-right: 2rem
-        @media (max-width: $medium)
+        @media (max-width: $md)
             margin-right: 5rem
-        @media (max-width: $small)
+        @media (max-width: $sm)
             margin-right: 3rem
 
-@media (max-width: $small)
+@media (max-width: $sm)
     .input__radio
         margin-bottom: 2rem
 
@@ -141,7 +150,7 @@
 .input__checkbox__item:not(:last-child)
     padding-bottom: 2rem
 
-@media (max-width: 1200px) and (min-width: $medium)
+@media (max-width: 1200px) and (min-width: $md)
     .input__checkbox__item label
         margin-left: 1.7rem
 
@@ -157,7 +166,7 @@
 .btn-submit
     margin-right: 2rem
 
-@media (max-width: $medium)
+@media (max-width: $md)
     .group-two
         display: block
 

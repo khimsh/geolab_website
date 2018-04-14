@@ -2,34 +2,48 @@
  * Section Styles
  **************************/
 .section__about
-    padding-top: 6.4rem
-    padding-bottom: 3.7rem
-
-.section__header
-    margin-bottom: 7rem
-
-.section__header--contact
-    padding-top: 1.5rem
-    padding-left: 1.5rem
-
-    @media (min-width: $medium)
-        margin-bottom: 0        //reset margin on large screen
-
-.section__description
-    padding-bottom: 7.4rem
+    margin-top: 6.2rem
+    margin-bottom: 3.7rem
 
 .section__gallery
     padding-top: 5.3rem
     margin-bottom: 8.5rem
 
-    @media (max-width: $small)
-        margin-bottom: 7.6rem
+    @media (max-width: $md)
+        margin-bottom: .6rem
 
+    @media (max-width: $sm)
+        margin-bottom: 1.5rem
 
 .section__contact
     background-color: $main-purple
     margin-top: 9rem
 
-    @media (max-width: $medium)
+    @media (max-width: $md)
         background-color: transparent
-        margin-top: 3rem
+        margin-top: 4.6rem
+
+.section__header
+    margin-bottom: 7rem
+
+    @media (max-width: $sm)
+        margin-bottom: 6.3rem
+
+    &--about
+        @media (max-width: $sm)
+            margin-bottom: 7.2rem
+
+.section__header--contact
+    padding-top: 1.5rem
+    padding-left: 1.5rem
+    margin-bottom: 0
+
+    @media (max-width: $md)
+        margin-bottom: 6.2rem
+        padding: 0
+
+    @media (max-width: $sm)
+        margin-bottom: 8.2rem
+
+.section__description
+    margin-bottom: 8rem
