@@ -1,17 +1,17 @@
 /**************************
  * Button Styles
  **************************/
-#{$all-buttons}
+#{$all-buttons},
     background-color: $main-purple
     border: 0
     cursor: pointer
     transition: all .2s
     padding: .21rem .5rem
 
-#{$all-buttons-hover}
-    background-color: tint($main-purple, 30%)
+#{$all-buttons-hover},
+#{$all-buttons-active}
+    background-color: $black
 
-@media (max-width: $medium)
+@media (max-width: $md)
     #{$all-buttons}
-        background-color: $black
         padding: .5rem .7rem
