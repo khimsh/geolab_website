@@ -104,7 +104,7 @@ li {
       font-size: 4rem; } }
 
 /**
- * About section typography
+ * Card typography
  **/
 .card__title {
   font-family: "Myriad Pro Regular", sans-serif; }
@@ -2025,7 +2025,8 @@ button:active, [type='button']:active, [type='reset']:active, [type='submit']:ac
   padding: 1rem 1.5rem;
   border: none; }
 
-.input__text__item input::-webkit-input-placeholder {
+.input__text__item input:-moz-placeholder,
+.input__text__item input:placeholder {
   font-family: "Myriad Pro Regular", sans-serif;
   font-size: 1.6rem;
   font-weight: 200;
@@ -2033,49 +2034,8 @@ button:active, [type='button']:active, [type='reset']:active, [type='submit']:ac
   line-height: 58.44px;
   color: #4D4D4D; }
 
-.input__text__item input:-ms-input-placeholder {
-  font-family: "Myriad Pro Regular", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 200;
-  letter-spacing: 3.2px;
-  line-height: 58.44px;
-  color: #4D4D4D; }
-
-.input__text__item input::-ms-input-placeholder {
-  font-family: "Myriad Pro Regular", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 200;
-  letter-spacing: 3.2px;
-  line-height: 58.44px;
-  color: #4D4D4D; }
-
-.input__text__item input::placeholder {
-  font-family: "Myriad Pro Regular", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 200;
-  letter-spacing: 3.2px;
-  line-height: 58.44px;
-  color: #4D4D4D; }
-
-textarea::-webkit-input-placeholder {
-  font-family: "Myriad Pro Regular", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 3.2px;
-  color: #4D4D4D; }
-
-textarea:-ms-input-placeholder {
-  font-family: "Myriad Pro Regular", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 3.2px;
-  color: #4D4D4D; }
-
-textarea::-ms-input-placeholder {
-  font-family: "Myriad Pro Regular", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 3.2px;
-  color: #4D4D4D; }
-
-textarea::placeholder {
+textarea:-moz-placeholder,
+textarea:placeholder {
   font-family: "Myriad Pro Regular", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 3.2px;
@@ -2090,6 +2050,85 @@ input[type="checkbox"] {
   line-height: 58.44px;
   letter-spacing: 3.2px;
   color: #000000; }
+
+/**
+ * Input Type Text
+ */
+.input__text__item {
+  position: relative; }
+  .input__text__item input {
+    margin-bottom: 3.3rem; }
+  .input__text__item label {
+    position: absolute;
+    top: -1.1rem;
+    left: 1.6rem;
+    opacity: 0;
+    visibility: hidden; }
+
+@media (max-width: 992px) {
+  .input__text__item input {
+    width: 24.6rem;
+    height: 4rem; } }
+
+@media (max-width: 768px) {
+  .input__text__item input {
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  textarea {
+    right: -29rem;
+    top: -14.6rem;
+    width: 291.3px;
+    position: absolute; } }
+
+@media (max-width: 768px) {
+  textarea {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%; } }
+
+/**
+ * Input Type Radio
+ */
+.input__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 12.5rem; }
+  .input__radio__item input {
+    margin-right: 2rem; }
+  .input__radio__item:not(:last-child) label {
+    margin-right: 4rem; }
+    @media (max-width: 1200px) {
+      .input__radio__item:not(:last-child) label {
+        margin-right: 2rem; } }
+    @media (max-width: 992px) {
+      .input__radio__item:not(:last-child) label {
+        margin-right: 5rem; } }
+    @media (max-width: 768px) {
+      .input__radio__item:not(:last-child) label {
+        margin-right: 3rem; } }
+  @media (max-width: 768px) {
+    .input__radio {
+      margin-bottom: 2rem; } }
+
+/**
+ * Input Type Checkbox
+ */
+.input__checkbox__item label {
+  margin-left: 2.7rem; }
+
+.input__checkbox__item:not(:last-child) {
+  padding-bottom: 2rem; }
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .input__checkbox__item label {
+    margin-left: 1.7rem; } }
 
 /**************************
  * Site Logo Styles
@@ -2316,88 +2355,8 @@ input[type="checkbox"] {
     .group-one__left, .group-one__right {
       width: 100%; } }
 
-/**
- * Input Type Text
- */
-.input__text__item {
-  position: relative; }
-  .input__text__item input {
-    margin-bottom: 3.3rem; }
-  .input__text__item label {
-    position: absolute;
-    top: -1.1rem;
-    left: 1.6rem;
-    opacity: 0;
-    visibility: hidden; }
-
-@media (max-width: 992px) {
-  .input__text__item input {
-    width: 24.6rem;
-    height: 4rem; } }
-
-@media (max-width: 768px) {
-  .input__text__item input {
-    width: 100%; } }
-
-@media (max-width: 992px) {
-  textarea {
-    right: -29rem;
-    top: -14.6rem;
-    width: 291.3px;
-    position: absolute; } }
-
-@media (max-width: 768px) {
-  textarea {
-    position: relative;
-    right: 0;
-    top: 0;
-    width: 100%; } }
-
-/**
- * Input Type Radio
- */
-.input__radio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 12.5rem; }
-  .input__radio__item input {
-    margin-right: 2rem; }
-  .input__radio__item:not(:last-child) label {
-    margin-right: 4rem; }
-    @media (max-width: 1200px) {
-      .input__radio__item:not(:last-child) label {
-        margin-right: 2rem; } }
-    @media (max-width: 992px) {
-      .input__radio__item:not(:last-child) label {
-        margin-right: 5rem; } }
-    @media (max-width: 768px) {
-      .input__radio__item:not(:last-child) label {
-        margin-right: 3rem; } }
-
-@media (max-width: 768px) {
-  .input__radio {
-    margin-bottom: 2rem; } }
-
-/**
- * Input Type Checkbox
- */
 .newsletter {
   margin-bottom: 2.5rem; }
-
-.input__checkbox__item label {
-  margin-left: 2.7rem; }
-
-.input__checkbox__item:not(:last-child) {
-  padding-bottom: 2rem; }
-
-@media (max-width: 1200px) and (min-width: 992px) {
-  .input__checkbox__item label {
-    margin-left: 1.7rem; } }
 
 /**
  * Input Group Two
@@ -2413,18 +2372,18 @@ input[type="checkbox"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 992px) {
+    .group-two {
+      display: block; } }
 
 .btn-submit {
   margin-right: 2rem; }
-
-@media (max-width: 992px) {
-  .group-two {
-    display: block; }
-  .btn-submit {
-    margin-right: 0px;
-    float: right;
-    -webkit-transform: translate(-1.4rem);
-            transform: translate(-1.4rem); } }
+  @media (max-width: 992px) {
+    .btn-submit {
+      margin-right: 0px;
+      float: right;
+      -webkit-transform: translate(-1.4rem);
+              transform: translate(-1.4rem); } }
 
 /**************************
  * Section Styles

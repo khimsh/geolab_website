@@ -69,91 +69,8 @@
         &__left, &__right
             width: 100%
 
-/**
- * Input Type Text
- */
-
-.input__text__item
-    position: relative
-
-    input
-        margin-bottom: 3.3rem
-
-    label
-        position: absolute
-        top: -1.1rem
-        left: 1.6rem
-        opacity: 0
-        visibility: hidden
-
-@media (max-width: $md)
-    .input__text__item
-        input
-            width: 24.6rem
-            height: 4rem
-
-@media (max-width: $sm)
-    .input__text__item
-        input
-            width: 100%
-
-@media (max-width: $md)
-    textarea
-        right: -29rem
-        top: -14.6rem
-        width: 291.3px
-        position: absolute
-
-@media (max-width: $sm)
-    textarea
-        position: relative
-        right: 0
-        top: 0
-        width: 100%
-
-
-/**
- * Input Type Radio
- */
-
-.input__radio
-    display: flex
-    flex-direction: row
-    margin-bottom: 12.5rem
-
-    &__item input
-        margin-right: 2rem
-
-    &__item:not(:last-child) label
-        margin-right: 4rem
-        @media (max-width: $lg)
-            margin-right: 2rem
-        @media (max-width: $md)
-            margin-right: 5rem
-        @media (max-width: $sm)
-            margin-right: 3rem
-
-@media (max-width: $sm)
-    .input__radio
-        margin-bottom: 2rem
-
-/**
- * Input Type Checkbox
- */
-
 .newsletter
     margin-bottom: 2.5rem
-
-.input__checkbox__item label
-    margin-left: 2.7rem
-
-.input__checkbox__item:not(:last-child)
-    padding-bottom: 2rem
-
-@media (max-width: 1200px) and (min-width: $md)
-    .input__checkbox__item label
-        margin-left: 1.7rem
-
 
 /**
  * Input Group Two
@@ -163,14 +80,13 @@
     flex-direction: row
     justify-content: space-between
 
+    @media (max-width: $md)
+        display: block
+
 .btn-submit
     margin-right: 2rem
 
-@media (max-width: $md)
-    .group-two
-        display: block
-
-    .btn-submit
+    @media (max-width: $md)
         margin-right: 0px
         float: right
         transform: translate(-1.4rem)
