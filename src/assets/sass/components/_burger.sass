@@ -2,7 +2,7 @@
  * Burger Icon Styles
  **************************/
 
-#burger-icon
+.burger-icon
 	height: 4rem
 	width: 4.5rem
 	position: relative
@@ -10,9 +10,13 @@
 	cursor: pointer
 	z-index: 11
 
-	.bar-top,
-	.bar-middle,
-	.bar-bottom
+	// Hide on large screen
+	@media (min-width: $sm)
+		display: none
+
+	&__top,
+	&__middle,
+	&__bottom
 		background: $main-purple
 		border-radius: 0
 		display: block
@@ -21,36 +25,31 @@
 		position: absolute
 		transition: .25s ease-in-out
 
-	.bar-top
+	&__top
 		top: 0
 		width: 4.5rem
 
-	.bar-middle
+	&__middle
 		width: 3.5rem
 		right: 0
 		top: 1.8rem
 
-	.bar-bottom
+	&__bottom
 		width: 4.5rem
 		bottom: 0
 
 // When clicked
-#burger-icon.active
+.burger-icon.active
 
-	.bar-middle
+	.burger-icon__middle
 		opacity: 0
 
-	.bar-top
+	.burger-icon__top
 		transform: rotate(45deg)
 		width: 3rem
 		top: 46%
 
-	.bar-bottom
+	.burger-icon__bottom
 		transform: rotate(-45deg)
 		width: 3rem
 		bottom: 46%
-
-// Hide on large screen
-@media (min-width: 768px)
-    #burger-icon
-        display: none
